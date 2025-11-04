@@ -1,63 +1,48 @@
 :root {
-  --oui-font-family: 'Manrope', sans-serif;
+  --oui-font-family: 'Inter', 'Roboto', sans-serif;
   --oui-font-size-base: 16px;
 
-  /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
-  --oui-color-primary-contrast: 255 255 255;
+  /* Primary Colors */
+  --oui-color-primary: 212 175 55; /* 金色點綴 */
+  --oui-color-primary-light: 234 201 128;
+  --oui-color-primary-darken: 176 132 0;
+  --oui-color-primary-contrast: 14 13 18; /* 深色背景對比 */
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  /* Background & Fill */
+  --oui-color-fill: 14 23 38;      /* #0E1726 深藍 */
+  --oui-color-fill-active: 27 38 59; /* #1B263B 黑灰 */
+  --oui-color-base-1: 36 32 47;
+  --oui-color-base-2: 43 38 56;
+  --oui-color-base-3: 51 46 66;
+  --oui-color-base-4: 57 52 74;
+  --oui-color-base-5: 68 61 69;
+  --oui-color-base-6: 81 72 107;
+  --oui-color-base-7: 93 83 123;
+  --oui-color-base-foreground: 224 224 224; /* 文字顏色 */
 
-  --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  /* Semantic Colors */
+  --oui-color-success: 41 233 169;
+  --oui-color-success-light: 101 240 194;
+  --oui-color-success-darken: 0 161 120;
+  --oui-color-success-contrast: 14 13 18;
 
   --oui-color-danger: 245 97 139;
   --oui-color-danger-light: 250 167 188;
   --oui-color-danger-darken: 237 72 122;
-  --oui-color-danger-contrast: 255 255 255;
-
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
-  --oui-color-success-contrast: 255 255 255;
+  --oui-color-danger-contrast: 14 13 18;
 
   --oui-color-warning: 255 209 70;
   --oui-color-warning-light: 255 229 133;
   --oui-color-warning-darken: 255 152 0;
-  --oui-color-warning-contrast: 255 255 255;
+  --oui-color-warning-contrast: 14 13 18;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* Links */
+  --oui-color-link: 212 175 55;
+  --oui-color-link-light: 234 201 128;
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
-
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
-
-  --oui-color-trading-loss: 245 97 139;
-  --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
-  --oui-color-trading-profit-contrast: 255 255 255;
-
-  /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
-
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  /* Gradients */
+  --oui-gradient-primary-start: 36 32 47;  /* 黑藍 */
+  --oui-gradient-primary-end: 212 175 55; /* 金色 */
 
   --oui-gradient-success-start: 1 83 68;
   --oui-gradient-success-end: 41 223 169;
@@ -65,19 +50,10 @@
   --oui-gradient-danger-start: 153 24 76;
   --oui-gradient-danger-end: 245 97 139;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
-
   --oui-gradient-warning-start: 152 58 8;
   --oui-gradient-warning-end: 255 209 70;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
-
-  /* rounded */
+  /* Rounded */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -86,15 +62,17 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
-  /* spacing */
-  --oui-spacing-xs: 20rem;
-  --oui-spacing-sm: 22.5rem;
-  --oui-spacing-md: 26.25rem;
-  --oui-spacing-lg: 30rem;
-  --oui-spacing-xl: 33.75rem;
+  /* Spacing */
+  --oui-spacing-xs: 0.5rem;
+  --oui-spacing-sm: 1rem;
+  --oui-spacing-md: 1.5rem;
+  --oui-spacing-lg: 2rem;
+  --oui-spacing-xl: 2.5rem;
 }
 
 html, body {
-  font-family: 'Manrope', sans-serif !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
   font-size: 16px !important;
+  background-color: rgb(var(--oui-color-fill));
+  color: rgb(var(--oui-color-base-foreground));
 }
